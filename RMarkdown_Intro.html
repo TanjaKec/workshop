@@ -384,6 +384,12 @@ outcome expressed in numerical terms.</li>
 generated that includes both your written content and the output of any
 embedded R code chunks.</p>
 <p>You can embed an R code chunk like this:</p>
+<pre class="r"><code># Install if needed (only runs once)
+if (!require(palmerpenguins)) install.packages(&quot;palmerpenguins&quot;)
+library(palmerpenguins)
+
+summary(penguins)
+penguins[1:10, ]</code></pre>
 <div class="callout-note">
 <p><strong>Note on messages and warnings</strong></p>
 <p>When you run R code, you may see messages such as:</p>

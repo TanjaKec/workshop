@@ -31,7 +31,7 @@ When you click the **Knit** button, a document will be generated that includes b
 
 You can embed an R code chunk like this:
 
-```{r penguins, echo=FALSE, eval=FALSE}
+```{r penguins, echo=TRUE, eval=FALSE}
 # Install if needed (only runs once)
 if (!require(palmerpenguins)) install.packages("palmerpenguins")
 library(palmerpenguins)
